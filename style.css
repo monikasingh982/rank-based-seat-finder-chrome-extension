@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600,400&display=swap');
+body {
+  background: linear-gradient(135deg, #232b3e 0%, #1a2233 100%);
+  color: #f5f7fa;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  border-radius: 18px;
+  padding: 18px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px rgba(35, 43, 62, 0.25);
+  font-size: 1.13em;
+  min-width: 340px;
+  height: auto;
+  overflow-y: auto;
+}
+.popup-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  margin-top: auto;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  color: #f5f7fa;
+}
+label {
+  font-size: 1.38em;
+  font-weight: 700;
+  color: #a0aec0;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  letter-spacing: 0.04em;
+  display: block;
+}
+input, select {
+  background: #232b3e;
+  color: #f5f7fa;
+  border-radius: 12px;
+  border: none;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  box-shadow: 0 2px 8px rgba(36, 139, 214, 0.10);
+  width: 100%;
+  box-sizing: border-box;
+}
+input::placeholder {
+  color: #a0aec0;
+  opacity: 0.7;
+}
+button {
+  background: linear-gradient(90deg, #344055 0%, #248BD6 100%);
+  color: #f5f7fa;
+  border: none;
+  border-radius: 16px;
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 1.38em;
+  box-shadow: 0 2px 8px rgba(36, 139, 214, 0.13);
+  transition: background 0.2s, box-shadow 0.2s;
+  width: 100%;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  margin-top: 14px;
+}
+button:hover {
+  background: linear-gradient(90deg, #248BD6 0%, #344055 100%);
+  box-shadow: 0 2px 12px rgba(36, 139, 214, 0.18);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#gender {
+  margin-bottom: 16px;
+}

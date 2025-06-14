@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rank-Based Seat Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="popup-title">Rank-Based Seat Finder</h2>
+  <div class="options-container">
+    <label for="minRank">Min Rank</label>
+    <input type="number" id="minRank" placeholder="Minimum Rank" min="1" />
+
+    <label for="maxRank">Max Rank</label>
+    <input type="number" id="maxRank" placeholder="Maximum Rank" min="1" />
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option>--Select--</option>
+      <option>ALL</option>
+      <option>SC</option>
+      <option>ST (PwD)</option>
+      <option>SC (PwD)</option>
+      <option>OPEN</option>
+      <option>OBC-NCL (PwD)</option>
+      <option>EWS (PwD)</option>
+      <option>OPEN (PwD)</option>
+      <option>ST</option>
+      <option>EWS</option>
+      <option>OBC-NCL</option>
+    </select>
+
+    <label for="quota">Quota</label>
+    <select id="quota">
+      <option>--Select--</option>
+      <option>AI/OS</option>
+      <option>HS</option>
+    </select>
+
+    <label for="gender">Gender</label>
+    <select id="gender">
+      <option>--Select--</option>
+      <option>Gender-Neutral</option>
+      <option>Female-only (including Supernumerary)</option>
+    </select>
+
+    <button id="highlightBtn">View Choices</button>
+    <button id="downloadPDFBtn">Download PDF</button>
+
+  </div>
+  <script src="lib/jspdf.umd.min.js"></script>
+<script src="lib/jspdf.plugin.autotable.min.js"></script>
+<script src="popup.js"></script>
+
+</body>
+</html>
